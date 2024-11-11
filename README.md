@@ -8,5 +8,3 @@ Welcome to the British Columbia's Wildfire Predictive Service (`wps`) tutorials 
 > By increasing exposure to the challenges of wildfires amongst the wider Data Science community, we strive to empower leaders with the tools to make optimal decisions which minimize the loss that communities and wildlife suffer.
 
 Each tutorial in this repository is carefully crafted to build foundational knowledge while tackling real-world challenges, such as early fire detection, perimeter mapping, and burn severity assessment. Whether you're a data scientist looking to apply your skills to environmental challenges, or a wildfire researcher seeking to leverage machine learning, you'll find resources here to support your journey.
-
-## Getting Started
