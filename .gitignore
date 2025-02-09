@@ -165,10 +165,10 @@ cython_debug/
 course-material/_build
 
 # Data files
+# *.csv
+# *.json
 *.asc
-*.csv
 *.tsv
-*.json
 *.pkl
 *.pickle
 *.h5
