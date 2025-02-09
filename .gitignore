@@ -196,9 +196,7 @@ products/*
 # But do not ignore .gitkeep files
 !products/.gitkeep
 *.metadata
-*.csv
 *.asc
-*.csv
 *.parquet
 pipeline/products/extract-pipeline.ipynb
 pipeline/products/wrangle-data-pipeline.ipynb
