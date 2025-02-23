@@ -167,6 +167,7 @@ course-material/_build
 # Data files
 # *.csv
 # *.json
+# *.db*
 *.asc
 *.tsv
 *.pkl
@@ -181,7 +182,6 @@ course-material/_build
 *.tgz
 *.rar
 *.arff
-*.db*
 *.docx
 *.txt
 jb-bank*
