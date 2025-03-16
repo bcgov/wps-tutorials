@@ -3,6 +3,8 @@
 
 This folder contains tutorial for getting started with building wildfire perimeters, including Jupyter notebooks for data analysis and visualization.
 
+
+
 ## Table of Contents
 
 * Requirements
@@ -11,11 +13,17 @@ This folder contains tutorial for getting started with building wildfire perimet
 * Using GitHub Secrets
 * Troubleshooting
 
+**NOTE:** These steps are **OPTIONAL** and only needed if you want to run the `.ipynb` file locally in Jupyter Notebook. The recommended approach is to use Google Colab, which you can access by clicking the `Open in Colab` button at the top left corner of the notebook when viewing it on GitHub.
+
+
+
 ### Requirements
 
 * Python `3.10.12`
 * Jupyter Notebook
-* Dependencies listed in requirements.txt
+* Dependencies listed in `requirements.txt`
+
+
 
 ### Environment Setup
 
@@ -60,6 +68,7 @@ conda activate cyberse_wildfire
 ```
 pip install -r requirements.txt
 ```
+
 
 
 ### Running the Notebook
