@@ -64,6 +64,8 @@ Once you have a Google Earth Engine project name in place, edit the `.env` file 
 PROJECT_NAME="insert-your-project-name"
 ```
 
+4. **Secure your credentials** 🔐
+
 Last but certainly not least, we need to add a `.gitignore` file to our repository using the following commands we saw earlier in the event that we don't already have one:
 
 ```bash
