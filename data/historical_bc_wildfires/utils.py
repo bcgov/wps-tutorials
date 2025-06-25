@@ -189,7 +189,7 @@ def sample_point_data(weather_data, point, lat, lon, date_val):
 sample_point_data_with_retry = retry_with_backoff()(sample_point_data)
 
 
-def get_weather_data(row):
+def get_weather_data(row, id_col):
     """
     Extract weather data from Google Earth Engine for a specific location and time.
 
@@ -203,7 +203,7 @@ def get_weather_data(row):
     date_val = row.get('ignition_datetime')
     lat = row.get('LATITUDE')
     lon = row.get('LONGITUDE')
-    fire_label = row.get('FIRELABEL')
+    fire_label = row.get(id_col)
 
     # Initialize default return values
     default_values = {
@@ -409,7 +409,7 @@ def create_dataframe(hardcoded_path=None, sheet_name=None, db_name=None, table_n
         return None
 
 
-def process_dataframe(df, batch_size=50, batch_delay=3):
+def process_dataframe(df, batch_size=100, batch_delay=3, id_col=None):
     """
     Process the dataframe in batches to avoid Earth Engine quota issues.
 
@@ -437,7 +437,7 @@ def process_dataframe(df, batch_size=50, batch_delay=3):
         logger.info(f"\n Processing batch {batch_num} of {total_batches} (rows {i} to {min(i+batch_size-1, len(df)-1)})")
 
         # Apply to each row in this batch
-        batch_results = batch.apply(get_weather_data, axis=1, result_type='expand')
+        batch_results = batch.apply(get_weather_data, axis=1, result_type='expand', args=(id_col,))
 
         ### ADDITIONAL CHECK ###
         # Check if 'temp_c' key exists in the dictionary and is not empty # or not(bool(batch_results['temperature_c']))

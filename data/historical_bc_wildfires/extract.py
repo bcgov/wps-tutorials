@@ -37,7 +37,9 @@ def main():
 
     df["ignition_datetime"] = convert_float_to_datetime(df[datetime_col])
 
-    weather_data = process_dataframe(df, batch_size=100)
+    unique_id_col = input("\n Enter the column name of the column you wish to designate as the UNIQUE ID field for your dataset: ")
+
+    weather_data = process_dataframe(df, id_col=unique_id_col)
 
     end_time = time.time()
     print(f"Execution took {end_time - start_time:.2f} seconds, or {((end_time - start_time) / 60):.2f} minutes, or {((end_time - start_time) / 3600):.2f} hours")

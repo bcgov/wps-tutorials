@@ -85,8 +85,8 @@ Your input data should contain some form of these essential columns:
 |-------------|-------------|---------|
 | `LATITUDE` | Fire location latitude | `45.123456` |
 | `LONGITUDE` | Fire location longitude | `-120.654321` |
-| `FIRE_LABEL` | Unique fire ID value | `FIRE_2023_001` |
-| `DATE_COLUMN` | Date/time column | `20230515` or `20230515143000` |
+| `unique_id_col` | Unique ID value | `FIRE_2023_001` |
+| `datetime_col` | Date/time column | `20230515` or `20230515143000` |
 
 **📅 Supported Date Formats for the `DATE_COLUMN`:**
 - `YYYYMMDD` (e.g., `20230515`)
