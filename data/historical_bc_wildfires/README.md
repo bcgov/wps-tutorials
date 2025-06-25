@@ -64,6 +64,17 @@ Once you have a Google Earth Engine project name in place, edit the `.env` file 
 PROJECT_NAME="insert-your-project-name"
 ```
 
+Last but certainly not least, we need to add a `.gitignore` file to our repository using the following commands we saw earlier in the event that we don't already have one:
+
+```bash
+touch .gitignore
+start .gitignore
+```
+
+The `.gitignore` file acts as a security guard for your repository, preventing Git from tracking, uploading, and displaying sensitive information when you commit code to version control platforms like GitHub. Adding files like `.env` to `.gitignore` is crucial because these files contain sensitive information like your Google Cloud project name, API keys, passwords, and other configuration secrets that should never be publicly visible. Without proper `.gitignore` protection, you could accidentally expose your project credentials to anyone who views your repository, potentially leading to unauthorized access to your Google Earth Engine resources or unexpected billing charges.
+
+If you're curious as to what a `.gitignore` file looks like or how it should be structured, feel free to [**check out the template**](https://github.com/bcgov/wps-tutorials/blob/main/.gitignore) we used for this project.
+
 ### 📊 Required Data Format
 
 Your input data should contain some form of these essential columns:

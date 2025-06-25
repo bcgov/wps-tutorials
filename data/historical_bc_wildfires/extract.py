@@ -31,7 +31,7 @@ def main():
 
     start_time = time.time()
 
-    df = create_dataframe()[:300]
+    df = create_dataframe() # [:300]
 
     datetime_col = input("\n Enter the column name of the DATETIME column in your dataset: ")
 

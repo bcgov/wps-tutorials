@@ -259,13 +259,11 @@ def get_weather_data(row):
 
         # Sample the point with error handling and retry
         try:
-            # data = sample_point_data(weather_data, point, lat, lon, date_val)
             data = sample_point_data_with_retry(weather_data, point, lat, lon, date_val)
 
             # Check if data is empty
             if not data:
                 logger.warning(f"Empty data returned for ({lat}, {lon}) at {date_val} for the {fire_label} fire label")
-                # return None
                 return default_values
 
             # Calculate wind speed and direction from u,v components
@@ -319,7 +317,6 @@ def save_results_to_downloads(weather_data, filename='weather_data.csv', save_fo
     """
 
     # Save to new folder in Downloads or create it if it doesn't exist
-    # save_path = "/content/drive/MyDrive/Cyberse_Fire_King/Downloads"
     relative_path = '~/Downloads'
     expand = os.path.expanduser(relative_path)
     save_path = f'{expand}/{save_folder}'
@@ -412,10 +409,6 @@ def create_dataframe(hardcoded_path=None, sheet_name=None, db_name=None, table_n
         return None
 
 
-###################################
-### Processing dataset function ###
-###################################
-
 def process_dataframe(df, batch_size=50, batch_delay=3):
     """
     Process the dataframe in batches to avoid Earth Engine quota issues.
@@ -487,7 +480,3 @@ def process_dataframe(df, batch_size=50, batch_delay=3):
         print("No weather data to process.")
         logger.warning("No weather data to process.")
         return df
-
-###################################
-###################################
-###################################
