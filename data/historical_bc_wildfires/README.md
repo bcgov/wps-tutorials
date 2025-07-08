@@ -196,6 +196,8 @@ Found a bug? Have an awesome feature idea?
 4. Push to the branch 🚀
 5. Open a Pull Request 📬
 
+Special thanks to the folks at [**BC Wildfires Services**](https://catalogue.data.gov.bc.ca/dataset/bc-wildfire-fire-incident-locations-historical) who provided the historical wildfire incident data for us to test our tool against.
+
 ## 📜 License
 
 This project is licensed under the **Apache License 2.0** - see the [LICENSE](LICENSE) file for details.
