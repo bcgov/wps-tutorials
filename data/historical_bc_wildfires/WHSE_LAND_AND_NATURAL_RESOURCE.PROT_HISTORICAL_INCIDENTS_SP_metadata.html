@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html>
+   <head>
+      <title>Metadata</title>
+      <meta charset="UTF-8">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   </head>
+   <body>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12" style="padding:10px;border: 1px solid black" >
+                     <img class="img-fluid d-block mx-auto" src="https://catalogue.data.gov.bc.ca/img/bc_mark.699f8f93.png" alt="B.C. Government Logo" style="height:65px;background-color:#003366">
+                     <H2 style="color:rgb(2,47,248)" class="text-center">BC Wildfire Fire Incident Locations - Historical</H2>
+                     <table class="table table-condensed">
+                        <thead>
+                           <tr>
+                              <th>Title</th>
+                              <th>Purpose</th>
+                              <th>Description</th>
+                              <th>Last Modified Date</th>
+                              <th>BCDC URL</th>
+                              <th>BCDC Type</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>BC Wildfire Fire Incident Locations - Historical</td>
+                              <td>This data can be used for visual or analytical purposes.  Not to be used for legal purposes.</td>
+                              <td>Wildfire historic incident point locations for all fire seasons before the current season.  Supplied through various sources.  Not to be used for legal purposes.  This data includes all incidents tracked by BC Wildfire Service, ie. actual fires, suspected fires, nusiance fires, smoke chases, etc.  On April 1 of each year this layer is updated with the previous fire season's data</td>
+                              <td>2025-02-02T12:09:55</td>
+                              <td><a href="https://catalogue.data.gov.bc.ca/dataset/e2dadc60-292f-4d98-b42b-56ca9e4fe694">https://catalogue.data.gov.bc.ca/dataset/e2dadc60-292f-4d98-b42b-56ca9e4fe694</a></td>
+                              <td>Geographic</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table class="table table-condensed">
+                        <thead>
+                           <tr>
+                              <th>Resource Location</th>
+                              <th>Object Name</th>
+                              <th>Short Name</th>
+                              <th>Object Comments</th>
+                              <th>Projection</th>
+                              <th>License Title</th>
+                              <th>License URL</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>Bc Geographic Warehouse</td>
+                              <td>WHSE_LAND_AND_NATURAL_RESOURCE. PROT_HISTORICAL_INCIDENTS_SP</td>
+                              <td>H_FIRE_PNT</td>
+                              <td>Contains the coordinate locations of historical (not current/active) fire incidents. The data contains the spatial representation of the location coordinate point where the incident occured, zone information, and a geographic description.</td>
+                              <td>epsg3005</td>
+                              <td>Open Government Licence - British Columbia</td>
+                              <td><a href="https://www2.gov.bc.ca/gov/content?id=A519A56BC2BF44E4A008B33FCF527F61">License Url</a></td>
+                           </tr>
+                        </tbody>
+                     </table>
+               <hr style="border-width:4px ">
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12" style="padding:10px;border: 1px solid black" >
+                     <H5 style="color:rgb(2,47,248)" class="text-left">Column Details</H5>
+                     <table class="table table-striped">
+                        <thead>
+                           <tr>
+                              <th>Column Name</th>
+                              <th>Short Name</th>
+                              <th>Data Type</th>
+                              <th>Data Precision</th>
+                              <th>Column Comments</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>FIRE_NUMBER</td>
+                              <td>FIRE_NO</td>
+                              <td>VARCHAR2</td>
+                              <td>25</td>
+                              <td>A composite of the following fields: Zone, Fire ID and Fire Centre.</td>
+                           </tr>
+                           <tr>
+                              <td>FIRE_YEAR</td>
+                              <td>FIRE_YEAR</td>
+                              <td>NUMBER</td>
+                              <td>4</td>
+                              <td>Represents the fiscal year, April 1 to March 31.</td>
+                           </tr>
+                           <tr>
+                              <td>RESPONSE_TYPE_DESC</td>
+                              <td>RSPNS_TYPC</td>
+                              <td>VARCHAR2</td>
+                              <td>200</td>
+                              <td>Describes the type of response an incident is receiving and is based on fire behaviour, potential risks and environmental factors.</td>
+                           </tr>
+                           <tr>
+                              <td>IGNITION_DATE</td>
+                              <td>IGN_DATE</td>
+                              <td>DATE</td>
+                              <td>7</td>
+                              <td>The discovery date of the fire.</td>
+                           </tr>
+                           <tr>
+                              <td>FIRE_OUT_DATE</td>
+                              <td>FR_T_DTE</td>
+                              <td>DATE</td>
+                              <td>7</td>
+                              <td>The date the fire is deemed out.</td>
+                           </tr>
+                           <tr>
+                              <td>FIRE_CAUSE</td>
+                              <td>FIRE_CAUSE</td>
+                              <td>VARCHAR2</td>
+                              <td>20</td>
+                              <td>The suspected cause of the fire, e.g., Lightning, Person.</td>
+                           </tr>
+                           <tr>
+                              <td>FIRE_LABEL</td>
+                              <td>FIRELABEL</td>
+                              <td>VARCHAR2</td>
+                              <td>20</td>
+                              <td>The concatenation of Fire Number and Fire Year.</td>
+                           </tr>
+                           <tr>
+                              <td>FIRE_CENTRE</td>
+                              <td>FRCNTR</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Represents the BC Wildfire Service Centre administrative area.</td>
+                           </tr>
+                           <tr>
+                              <td>ZONE</td>
+                              <td>ZONE</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>A subset of the BC Wildfire Service Centre administrative area.</td>
+                           </tr>
+                           <tr>
+                              <td>FIRE_ID</td>
+                              <td>FIRE_ID</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>A unique number, system-generated, within a fire year and fire centre.</td>
+                           </tr>
+                           <tr>
+                              <td>FIRE_TYPE</td>
+                              <td>FIRE_TYPE</td>
+                              <td>VARCHAR2</td>
+                              <td>200</td>
+                              <td>Defines the type of incident that occured, e.g., Fire of Note, New, Modified/Monitored, Full Response.</td>
+                           </tr>
+                           <tr>
+                              <td>INCIDENT_NAME</td>
+                              <td>INCDNT_NM</td>
+                              <td>VARCHAR2</td>
+                              <td>100</td>
+                              <td>The official name of the wildfire.</td>
+                           </tr>
+                           <tr>
+                              <td>GEOGRAPHIC_DESCRIPTION</td>
+                              <td>GEO_DESC</td>
+                              <td>VARCHAR2</td>
+                              <td>2000</td>
+                              <td>A description of the approximate fire location: IC must note how far and in what direction the wildfire is in relation to a geographic reference. Note: for Railroad fires, actual railroad mileage is iuncluded as part of the geographic information, e.g., Sallus Creek, 172 mile-marker on railroad.</td>
+                           </tr>
+                           <tr>
+                              <td>LATITUDE</td>
+                              <td>LATITUDE</td>
+                              <td>NUMBER</td>
+                              <td>11</td>
+                              <td>The geographic coordinate, in decimal degrees (dd.dddddd), of the location of the feature as measured from the equator, e.g., 55.323653.</td>
+                           </tr>
+                           <tr>
+                              <td>LONGITUDE</td>
+                              <td>LONGITUDE</td>
+                              <td>NUMBER</td>
+                              <td>11</td>
+                              <td>The geographic coordinate, in decimal degrees (-ddd.dddddd), of the location of the feature as measured from the prime meridian, e.g., -123.093544. </td>
+                           </tr>
+                           <tr>
+                              <td>CURRENT_SIZE</td>
+                              <td>SIZE_HA</td>
+                              <td>NUMBER</td>
+                              <td>9</td>
+                              <td>The estimated size of the area within the outside perimeter of the incident, in hectares.</td>
+                           </tr>
+                           <tr>
+                              <td>FEATURE_CODE</td>
+                              <td>FCODE</td>
+                              <td>VARCHAR2</td>
+                              <td>10</td>
+                              <td>Contains an alphanumeric value based on the Canadian Council of Surveys and Mappingâ€™s (CCSM) system for classification of geographic features, e.g., AR82000110.</td>
+                           </tr>
+                           <tr>
+                              <td>SHAPE</td>
+                              <td>SHAPE</td>
+                              <td>SDO_GEOMETRY</td>
+                              <td>1</td>
+                              <td>SHAPE is the column used to reference the spatial coordinates defining the feature.</td>
+                           </tr>
+                           <tr>
+                              <td>OBJECTID</td>
+                              <td>OBJECTID</td>
+                              <td>NUMBER</td>
+                              <td>38</td>
+                              <td>A column required by spatial layers that interact with ESRI ArcSDE. It is populated with unique values automatically by SDE.</td>
+                           </tr>
+                           <tr>
+                              <td>SE_ANNO_CAD_DATA</td>
+                              <td>None</td>
+                              <td>BLOB</td>
+                              <td>4000</td>
+                              <td>A binary column used by spatial tools to store annotation, curve features and CAD data when using the SDO_GEOMETRY storage data type. </td>
+                           </tr>
+                        </tbody>
+                     </table>
+               <hr style="border-width:5px ">
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
+
