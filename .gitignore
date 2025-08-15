@@ -183,7 +183,6 @@ course-material/_build
 *.rar
 *.arff
 *.docx
-*.txt
 jb-bank*
 jb-bank
 uci-marketing-data
