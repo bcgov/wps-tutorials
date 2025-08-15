@@ -165,11 +165,10 @@ cython_debug/
 course-material/_build
 
 # Data files
-# *.csv
-# *.json
-# *.db*
 *.asc
+*.csv
 *.tsv
+*.json
 *.pkl
 *.pickle
 *.h5
@@ -182,6 +181,7 @@ course-material/_build
 *.tgz
 *.rar
 *.arff
+*.db*
 *.docx
 *.txt
 jb-bank*
@@ -196,7 +196,9 @@ products/*
 # But do not ignore .gitkeep files
 !products/.gitkeep
 *.metadata
+*.csv
 *.asc
+*.csv
 *.parquet
 pipeline/products/extract-pipeline.ipynb
 pipeline/products/wrangle-data-pipeline.ipynb
