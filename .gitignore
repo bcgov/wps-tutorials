@@ -58,8 +58,6 @@ cover/
 # Django stuff:
 *.log
 local_settings.py
-db.sqlite3
-db.sqlite3-journal
 
 # Flask stuff:
 instance/
@@ -166,14 +164,10 @@ course-material/_build
 
 # Data files
 *.asc
-*.csv
 *.tsv
-*.json
 *.pkl
 *.pickle
 *.h5
-*.xlsx
-*.xls
 *.gz
 *.zip
 *.tar
@@ -181,7 +175,6 @@ course-material/_build
 *.tgz
 *.rar
 *.arff
-*.db*
 *.docx
 jb-bank*
 jb-bank
@@ -195,9 +188,7 @@ products/*
 # But do not ignore .gitkeep files
 !products/.gitkeep
 *.metadata
-*.csv
 *.asc
-*.csv
 *.parquet
 pipeline/products/extract-pipeline.ipynb
 pipeline/products/wrangle-data-pipeline.ipynb
